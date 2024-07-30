@@ -28,7 +28,6 @@ public class StepDefinition {
 
     @When("I send a POST request to {string} with the following data:")
     public void i_send_a_POST_request_to_with_the_following_data(String endpoint, DataTable dataTable) {
-
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         Map<String, String> requestData = data.get(0);
 
